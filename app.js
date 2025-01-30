@@ -70,9 +70,9 @@ async function main() {
   await mongoose.connect(dbUrl);
 }
 
-// app.get("/", (req, res) => {
-//   res.send("welcome to home.");
-// });
+app.get("/", (req, res) => {
+  res.render("home.ejs");
+});
 
 app.use(session(sessionData));
 app.use(flash());
