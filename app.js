@@ -71,7 +71,7 @@ async function main() {
 }
 
 app.get("/", (req, res) => {
-  res.render("home.ejs");
+  res.redirect("/listings");
 });
 
 app.use(session(sessionData));
